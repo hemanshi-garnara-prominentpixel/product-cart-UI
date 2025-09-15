@@ -1,11 +1,12 @@
 import type { ProductData } from "../common/types";
 
-export const products : ProductData[]= [
+export const products: ProductData[] = [
   {
     id: 1,
     name: "Wireless Headphones",
     brand: "Sony",
-    imageUrl: "https://picsum.photos/seed/headphones1/400/300",
+    imageUrl:
+      "https://img.tatacliq.com/images/i8/437Wx649H/MP000000011975996_437Wx649H_202202091435431.jpeg",
     price: 2500,
     discount: 20,
     stockStatus: "In Stock",
@@ -15,29 +16,31 @@ export const products : ProductData[]= [
     category: "Electronics > Audio > Headphones",
     deliveryOptions: ["Free Delivery", "Express Shipping"],
     warranty: "1 Year Warranty",
-    returnPolicy: "10 Days Return"
+    returnPolicy: "10 Days Return",
   },
   {
     id: 2,
     name: "Smartphone Pro",
     brand: "Samsung",
-    imageUrl: "https://picsum.photos/seed/phone2/400/300",
+    imageUrl:
+      "https://www.cnet.com/a/img/resize/dac350f2a6123a7399865524990d7f284078adb1/hub/2021/01/07/29be241a-4a73-45fd-bd60-99e18b8b74d0/samsung-galaxy-note-s20-ultra-iphone-12-pro-max-product-promo-hoyle-2021-2.jpg?auto=webp&fit=crop&height=675&width=1200",
     price: 55000,
     discount: 10,
-    stockStatus: "In Stock",
+    stockStatus: "Out of Stock",
     shortDescription: "High-end smartphone with AMOLED display.",
     fullDescription:
       "Samsung Smartphone Pro features a 6.5-inch AMOLED display, 128GB storage, and a triple-camera setup for stunning photos.",
     category: "Electronics > Mobile Phones",
     deliveryOptions: ["Free Delivery"],
     warranty: "1 Year Manufacturer Warranty",
-    returnPolicy: "7 Days Return"
+    returnPolicy: "7 Days Return",
   },
   {
     id: 3,
     name: "Gaming Laptop",
     brand: "Dell",
-    imageUrl: "https://picsum.photos/seed/laptop3/400/300",
+    imageUrl:
+      "https://jarrods.tech/wp-content/uploads/2023/12/asus-rog-zephyrus-m16-2023-gaming-laptop-1024x576.jpg",
     price: 75000,
     discount: 15,
     stockStatus: "In Stock",
@@ -47,13 +50,14 @@ export const products : ProductData[]= [
     category: "Electronics > Computers > Laptops",
     deliveryOptions: ["Free Delivery", "Cash on Delivery"],
     warranty: "2 Years Warranty",
-    returnPolicy: "15 Days Return"
+    returnPolicy: "15 Days Return",
   },
   {
     id: 4,
     name: "4K Smart TV",
     brand: "LG",
-    imageUrl: "https://picsum.photos/seed/tv4/400/300",
+    imageUrl:
+      "https://s3.infra.brandquad.io/accounts-media/SHRP/DAM/origin/5ed1ddf8-4e73-11ef-a427-bea7e36404f4.jpg",
     price: 42000,
     discount: 25,
     stockStatus: "In Stock",
@@ -63,29 +67,31 @@ export const products : ProductData[]= [
     category: "Electronics > Televisions",
     deliveryOptions: ["Free Delivery", "Installation Included"],
     warranty: "3 Years Warranty",
-    returnPolicy: "30 Days Return"
+    returnPolicy: "30 Days Return",
   },
   {
     id: 5,
     name: "Bluetooth Speaker",
     brand: "JBL",
-    imageUrl: "https://picsum.photos/seed/speaker5/400/300",
+    imageUrl:
+      "https://media.tatacroma.com/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/251614_0_ghxuff.png",
     price: 3500,
     discount: 18,
-    stockStatus: "In Stock",
+    stockStatus: "Out of Stock",
     shortDescription: "Portable Bluetooth speaker with deep bass.",
     fullDescription:
       "Compact yet powerful, this JBL Bluetooth speaker offers 12 hours of playtime, waterproof design, and premium sound.",
     category: "Electronics > Audio > Speakers",
     deliveryOptions: ["Free Delivery", "Cash on Delivery"],
     warranty: "1 Year Warranty",
-    returnPolicy: "7 Days Return"
+    returnPolicy: "7 Days Return",
   },
   {
     id: 6,
     name: "Smartwatch Series X",
     brand: "Apple",
-    imageUrl: "https://picsum.photos/seed/watch6/400/300",
+    imageUrl:
+      "https://image.made-in-china.com/202f0j00FErByQndyAoH/Watch-10-Series-10-Smartwatch-42mm-46mm-Hw-X-PRO-Smart-Watch-Howear.webp",
     price: 32000,
     discount: 12,
     stockStatus: "In Stock",
@@ -95,13 +101,14 @@ export const products : ProductData[]= [
     category: "Electronics > Wearables",
     deliveryOptions: ["Free Delivery"],
     warranty: "1 Year International Warranty",
-    returnPolicy: "14 Days Return"
+    returnPolicy: "14 Days Return",
   },
   {
     id: 7,
     name: "DSLR Camera",
     brand: "Canon",
-    imageUrl: "https://picsum.photos/seed/camera7/400/300",
+    imageUrl:
+      "https://rvrsp.in/wp-content/uploads/2024/09/professional-dslr-camera-with-zoom-lens.jpg",
     price: 48000,
     discount: 20,
     stockStatus: "In Stock",
@@ -111,13 +118,14 @@ export const products : ProductData[]= [
     category: "Electronics > Cameras",
     deliveryOptions: ["Free Delivery", "Cash on Delivery"],
     warranty: "2 Years Warranty",
-    returnPolicy: "10 Days Return"
+    returnPolicy: "10 Days Return",
   },
   {
     id: 8,
     name: "Air Conditioner 1.5 Ton",
     brand: "Voltas",
-    imageUrl: "https://picsum.photos/seed/ac8/400/300",
+    imageUrl:
+      "https://www.cruiseac.com/assets/images/product/1-5-ton-3-star-inverter-split-ac-cwcvbl-vp3f183bl.webp",
     price: 36000,
     discount: 22,
     stockStatus: "In Stock",
@@ -127,13 +135,14 @@ export const products : ProductData[]= [
     category: "Home Appliances > Air Conditioners",
     deliveryOptions: ["Free Delivery", "Installation Included"],
     warranty: "5 Years Compressor Warranty",
-    returnPolicy: "10 Days Return"
+    returnPolicy: "10 Days Return",
   },
   {
     id: 9,
     name: "Microwave Oven",
     brand: "Samsung",
-    imageUrl: "https://picsum.photos/seed/microwave9/400/300",
+    imageUrl:
+      "https://www.livemint.com/lm-img/img/2025/06/06/optimize/best_microwave_oven_1749197297938_1749197310681.png",
     price: 14000,
     discount: 30,
     stockStatus: "In Stock",
@@ -143,13 +152,14 @@ export const products : ProductData[]= [
     category: "Home Appliances > Kitchen",
     deliveryOptions: ["Free Delivery"],
     warranty: "1 Year Warranty",
-    returnPolicy: "7 Days Return"
+    returnPolicy: "7 Days Return",
   },
   {
     id: 10,
     name: "Refrigerator Double Door",
     brand: "Whirlpool",
-    imageUrl: "https://picsum.photos/seed/fridge10/400/300",
+    imageUrl:
+      "https://cdn.shopify.com/s/files/1/0555/0676/3891/files/single2.jpg",
     price: 30000,
     discount: 15,
     stockStatus: "In Stock",
@@ -159,29 +169,31 @@ export const products : ProductData[]= [
     category: "Home Appliances > Refrigerators",
     deliveryOptions: ["Free Delivery", "Installation Included"],
     warranty: "2 Years Warranty",
-    returnPolicy: "15 Days Return"
+    returnPolicy: "15 Days Return",
   },
   {
     id: 11,
     name: "Washing Machine",
     brand: "Bosch",
-    imageUrl: "https://picsum.photos/seed/washing11/400/300",
+    imageUrl:
+      "https://www.lg.com/content/dam/channel/wcms/in/images/washing-machines/front-load/WM-WD-Gentle-Wash-Banner-768x1050-M-1-2.jpg",
     price: 28000,
     discount: 18,
-    stockStatus: "In Stock",
+    stockStatus: "Out of Stock",
     shortDescription: "Front-load washing machine with inverter motor.",
     fullDescription:
       "Bosch washing machine offers silent operation, smart wash programs, and low water consumption.",
     category: "Home Appliances > Washing Machines",
     deliveryOptions: ["Free Delivery", "Installation Included"],
     warranty: "3 Years Warranty",
-    returnPolicy: "14 Days Return"
+    returnPolicy: "14 Days Return",
   },
   {
     id: 12,
     name: "Coffee Maker",
     brand: "Philips",
-    imageUrl: "https://picsum.photos/seed/coffee12/400/300",
+    imageUrl:
+      "https://www.wonderchef.com/cdn/shop/files/6809756.jpg?v=1757415602",
     price: 4500,
     discount: 10,
     stockStatus: "In Stock",
@@ -191,29 +203,31 @@ export const products : ProductData[]= [
     category: "Home Appliances > Kitchen",
     deliveryOptions: ["Free Delivery"],
     warranty: "1 Year Warranty",
-    returnPolicy: "7 Days Return"
+    returnPolicy: "7 Days Return",
   },
   {
     id: 13,
     name: "Fitness Band",
     brand: "Mi",
-    imageUrl: "https://picsum.photos/seed/fitness13/400/300",
+    imageUrl:
+      "https://m.media-amazon.com/images/I/31uCWdfAOuL._UF1000,1000_QL80_.jpg",
     price: 2500,
     discount: 25,
-    stockStatus: "In Stock",
+    stockStatus: "Out of Stock",
     shortDescription: "Fitness tracker with heart-rate monitor.",
     fullDescription:
       "Mi fitness band tracks steps, calories, heart rate, and sleep patterns with 2 weeks battery life.",
     category: "Electronics > Wearables",
     deliveryOptions: ["Free Delivery", "Cash on Delivery"],
     warranty: "6 Months Warranty",
-    returnPolicy: "7 Days Return"
+    returnPolicy: "7 Days Return",
   },
   {
     id: 14,
     name: "Tablet Pro",
     brand: "Apple",
-    imageUrl: "https://picsum.photos/seed/tablet14/400/300",
+    imageUrl:
+      "https://www.jiomart.com/images/product/original/493178863/apple-ipad-pro-4th-gen-2022-27-96-cm-11-inch-wi-fi-tablet-2-tb-space-grey-mnxm3hn-a-digital-o493178863-p594838626-0-202306281109.jpeg?im=Resize=(420,420)",
     price: 65000,
     discount: 8,
     stockStatus: "In Stock",
@@ -223,13 +237,14 @@ export const products : ProductData[]= [
     category: "Electronics > Tablets",
     deliveryOptions: ["Free Delivery"],
     warranty: "1 Year International Warranty",
-    returnPolicy: "10 Days Return"
+    returnPolicy: "10 Days Return",
   },
   {
     id: 15,
     name: "Smart Speaker",
     brand: "Amazon Echo",
-    imageUrl: "https://picsum.photos/seed/smartspeaker15/400/300",
+    imageUrl:
+      "https://i.pcmag.com/imagery/roundups/017S1tRIBIkr8Mfan0lnX4J-59.fit_lim.size_1200x630.v1657221180.jpg",
     price: 7000,
     discount: 12,
     stockStatus: "In Stock",
@@ -239,13 +254,14 @@ export const products : ProductData[]= [
     category: "Electronics > Smart Home",
     deliveryOptions: ["Free Delivery"],
     warranty: "1 Year Warranty",
-    returnPolicy: "7 Days Return"
+    returnPolicy: "7 Days Return",
   },
   {
     id: 16,
     name: "Electric Kettle",
     brand: "Prestige",
-    imageUrl: "https://picsum.photos/seed/kettle16/400/300",
+    imageUrl:
+      "https://img.tatacliq.com/images/i19//437Wx649H/MP000000023201915_437Wx649H_202408092049401.jpeg",
     price: 1800,
     discount: 20,
     stockStatus: "In Stock",
@@ -255,29 +271,31 @@ export const products : ProductData[]= [
     category: "Home Appliances > Kitchen",
     deliveryOptions: ["Free Delivery"],
     warranty: "1 Year Warranty",
-    returnPolicy: "7 Days Return"
+    returnPolicy: "7 Days Return",
   },
   {
     id: 17,
     name: "Running Shoes",
     brand: "Nike",
-    imageUrl: "https://picsum.photos/seed/shoes17/400/300",
+    imageUrl:
+      "https://assets.myntassets.com/w_412,q_30,dpr_3,fl_progressive,f_webp/assets/images/31445185/2024/12/27/5dc74546-ec02-44d1-b93a-c9a11eadbc5c1735275396309-BOLDFIT-Men-Lace-Ups-Sports-Running-Shoes-6841735275395856-1.jpg",
     price: 5000,
     discount: 30,
-    stockStatus: "In Stock",
+    stockStatus: "Out of Stock",
     shortDescription: "Lightweight running shoes with breathable mesh.",
     fullDescription:
       "Nike running shoes offer comfort and durability for long runs and workouts.",
     category: "Fashion > Footwear",
     deliveryOptions: ["Free Delivery", "Cash on Delivery"],
     warranty: "6 Months Warranty",
-    returnPolicy: "15 Days Return"
+    returnPolicy: "15 Days Return",
   },
   {
     id: 18,
     name: "Leather Wallet",
     brand: "Tommy Hilfiger",
-    imageUrl: "https://picsum.photos/seed/wallet18/400/300",
+    imageUrl:
+      "https://imagescdn.peterengland.com/img/app/product/3/39708534-14583048.jpg?auto=format&w=390",
     price: 2500,
     discount: 15,
     stockStatus: "In Stock",
@@ -287,13 +305,14 @@ export const products : ProductData[]= [
     category: "Fashion > Accessories",
     deliveryOptions: ["Free Delivery"],
     warranty: "6 Months Warranty",
-    returnPolicy: "10 Days Return"
+    returnPolicy: "10 Days Return",
   },
   {
     id: 19,
     name: "Office Chair",
     brand: "Herman Miller",
-    imageUrl: "https://picsum.photos/seed/chair19/400/300",
+    imageUrl:
+      "https://rukminim2.flixcart.com/image/704/844/xif0q/office-study-chair/1/m/i/1-polyester-48-2-pictor-office-chair-high-back-mesh-ergonomic-original-imahdryyhtxwwytg.jpeg?q=90&crop=false",
     price: 22000,
     discount: 10,
     stockStatus: "In Stock",
@@ -303,22 +322,23 @@ export const products : ProductData[]= [
     category: "Furniture > Office",
     deliveryOptions: ["Free Delivery", "Installation Included"],
     warranty: "5 Years Warranty",
-    returnPolicy: "30 Days Return"
+    returnPolicy: "30 Days Return",
   },
   {
     id: 20,
     name: "Backpack",
     brand: "Wildcraft",
-    imageUrl: "https://picsum.photos/seed/backpack20/400/300",
+    imageUrl:
+      "https://icon.in/cdn/shop/files/1_50b8664b-0c2b-477a-9d86-ed6fce060859.jpg?v=1756985540",
     price: 1800,
     discount: 18,
-    stockStatus: "In Stock",
+    stockStatus: "Out of Stock",
     shortDescription: "Durable backpack with multiple compartments.",
     fullDescription:
       "Wildcraft backpack is water-resistant and ideal for travel, work, or college use.",
     category: "Fashion > Bags",
     deliveryOptions: ["Free Delivery"],
     warranty: "1 Year Warranty",
-    returnPolicy: "7 Days Return"
-  }
+    returnPolicy: "7 Days Return",
+  },
 ];

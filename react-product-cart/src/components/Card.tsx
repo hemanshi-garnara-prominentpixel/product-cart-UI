@@ -1,20 +1,25 @@
 import React from "react";
 import type { CartProps } from "../common/types";
 import { useNavigate } from "react-router-dom";
+import { useCart } from "../context/CartContext";
+import { toast } from "react-toastify";
 
-const Cart: React.FC<CartProps> = ({ product }) => {
+const Card: React.FC<CartProps> = ({ product }) => {
   const navigate = useNavigate();
 
   const discountedPrice =
     product.price - (product.price * product.discount) / 100;
+  const { cart, addToCart } = useCart();
+
+  const cartItem = cart.find((item) => item.id === product.id);
 
   return (
     <>
       <div
-        className="max-w-xs overflow-hidden rounded-3xl relative"
+        className="max-w-xs overflow-hidden rounded-3xl relative hover:cursor-pointer"
         onClick={() => navigate(`/products/${product.id}`)}
       >
-        <div>
+        <div className="hover:cursor-pointer">
           <img
             className="object-fit-cover h-44 w-full"
             src={product.imageUrl}
@@ -61,16 +66,33 @@ const Cart: React.FC<CartProps> = ({ product }) => {
 
           <div className="flex items-center justify-between mt-3 mb-1">
             <button
-              className="px-3 py-1 bg-gray-800 text-white text-2sm rounded-lg hover:bg-gray-900 transition w-full"
+              className={`px-3 py-1 text-white text-2sm rounded-lg transition w-full
+                ${
+                  product.stockStatus !== "In Stock"
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : "bg-gray-800 hover:bg-gray-900"
+                }`}
               onClick={(e) => {
-                e.stopPropagation(); 
-                // onAddToCart?.(product.id); // Uncomment if needed
+                e.stopPropagation();
+                if (product.stockStatus === "In Stock") {
+                  addToCart(product);
+
+                  if (cartItem) {
+                    toast.info(
+                      `Item quantity updated to ${cartItem.quantity + 1}`
+                    );
+                  } else {
+                    toast.success("Item added to cart");
+                  }
+                } else {
+                  toast.error("This product is out of stock");
+                }
               }}
               disabled={product.stockStatus !== "In Stock"}
             >
-              {product.stockStatus === "In Stock"
-                ? "Add to Cart"
-                : "Out of Stock"}
+              {product.stockStatus !== "In Stock"
+                ? "Out of Stock"
+                : "Add to Cart"}
             </button>
           </div>
         </div>
@@ -79,4 +101,4 @@ const Cart: React.FC<CartProps> = ({ product }) => {
   );
 };
 
-export default Cart;
+export default Card;
